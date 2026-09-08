@@ -41,7 +41,7 @@ risks on your behalf.
 | 10 | Licence activation | Activating a paid licence sends the key and a label for your machine to the merchant of record, once. | The call is made only when you run the command. The answer is stored locally with restricted permissions. | That the merchant learns which machine activated a key. |
 | 11 | Work interrupted at a bad moment | A refused commit or an interrupted turn can leave you with uncommitted changes. | Nothing is deleted by the duck, ever. The override exists for exactly this moment. | Finishing the step yourself. |
 | 12 | Wrong or outdated documentation | This page, the README and the site may lag behind the code. | The code is the authority; every claim here names the mechanism you can read. | Reading the code when it matters. |
-| 13 | Modified copies | Anyone can edit the source. A modified duck may refuse the wrong things, refuse nothing, or do harm the original cannot. | A sealed duck fails closed when its file no longer matches its manifest, so a modified copy announces itself. The author distributes only through the author's own repositories at github.com/garitac. | A modified copy is not Helmet Duck. Whoever modified it owns everything it does; the author is not liable for it. |
+| 13 | Modified copies | Anyone can edit the source. A modified duck may refuse the wrong things, refuse nothing, or do harm the original cannot. | A sealed duck fails closed when its file no longer matches its manifest, so a modified copy announces itself. The author distributes only through the marketplace at github.com/garitac/helmet-duck and the repositories it names. | A modified copy is not Helmet Duck. Whoever modified it owns everything it does; the author is not liable for it. |
 | 14 | Installation on a system you do not own | Helmet Duck reads transcripts and refuses actions on whatever machine it is installed on, with that machine's user privileges. Installing it on someone else's system, or without the authority to do so, is a decision the installer makes. | Acceptance is recorded per user on the machine, with the user name, version and time. | Whoever installs it is solely responsible for having the authority to do so and for that system's owner; the author is not liable to the installer, to the system's owner, or to anyone affected. |
 | 15 | The boundary is the agent's tools | The gates refuse what an agent does through its tools: its shell, its file edits, its patches, the owner's commands when the agent tries them. A person at the keyboard can still run `duck override`, edit a file by hand, or uninstall. | Deliberate: the owner must always be able to stop or open the duck. Protection is against an agent's mistakes, not against a person with access to the machine. | That Helmet Duck is not an access control and must not be relied on as one. |
 
@@ -66,7 +66,8 @@ exclusion, liability is limited to the amount you paid for Helmet Duck in the
 twelve months before the claim, which for the free tier is nothing.
 
 The author is likewise not liable for any copy that anyone has modified, for
-any copy obtained other than from the author's own repositories at github.com/garitac, or for any
+any copy obtained other than from the marketplace at
+github.com/garitac/helmet-duck and the repositories it names, or for any
 installation made by a person who did not own the system or lacked the
 authority to install software on it. Whoever modifies Helmet Duck, redistributes
 it, or installs it on a system they do not own is solely responsible for the
