@@ -1,0 +1,32 @@
+name: CI
+
+# Credential-free verification on every push to main and every pull request: the duck's
+# selftest on its recorded fixtures, the seal, both plugin manifests, the skill
+# frontmatter, the language rule and the workflow pins. Nothing is deployed from this
+# repository; the storefront at helmetduck.com lives in garitac/helmet-duck and lists
+# this plugin in its marketplace.
+#
+# Actions are pinned to full commit SHAs; the trailing comment is the version.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Verify the duck
+        run: python3 tools/check.py
