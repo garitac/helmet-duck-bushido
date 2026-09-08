@@ -128,9 +128,10 @@ project root. Both merge over the defaults. Keys: `gates` (switch each gate),
 ## Repository
 
 This repository is exactly what the plugin ships, and its `main` is what the marketplace
-installs. The brand, the storefront helmetduck.com, its infrastructure and its watchers live
-in https://github.com/garitac/helmet-duck, whose marketplace lists this plugin as
-`helmet-duck-bushido`. Report a vulnerability through that repository's SECURITY.md.
+installs. The marketplace is https://github.com/garitac/helmet-duck, which lists this plugin as
+`helmet-duck-bushido`. The brand, the storefront helmetduck.com, its infrastructure and its
+watchers live in https://github.com/garitac/helmet-duck-website; report a vulnerability through
+that repository's Security tab.
 
 ## Licence
 
