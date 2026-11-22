@@ -113,7 +113,7 @@ duck licence status | deactivate
 
 ## Money
 
-Sponsorship through GitHub Sponsors; Personal and Team licences through a merchant
+Sponsorship through [GitHub Sponsors](https://github.com/sponsors/garitac); Personal and Team licences through a merchant
 of record. Software only: no installation service, no custom work, no hours. The
 author is one person, and support is the public issue tracker, in English, as time
 allows. No payment code lives here; see the storefront repository, https://github.com/garitac/helmet-duck.
@@ -129,9 +129,9 @@ project root. Both merge over the defaults. Keys: `gates` (switch each gate),
 
 This repository is exactly what the plugin ships, and its `main` is what the marketplace
 installs. The marketplace is https://github.com/garitac/helmet-duck, which lists this plugin as
-`helmet-duck-bushido`. The brand, the storefront helmetduck.com, its infrastructure and its
-watchers live in https://github.com/garitac/helmet-duck-website; report a vulnerability through
-that repository's Security tab.
+`helmet-duck-bushido`. Product information is at https://helmetduck.com. Report a
+vulnerability privately through
+https://github.com/garitac/helmet-duck-bushido/security/advisories/new; see [SECURITY.md](SECURITY.md).
 
 ## Licence
 
